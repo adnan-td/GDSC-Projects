@@ -49,6 +49,7 @@
   position: relative;
   width: 100%;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .card-header .card-img .ci-1 {
@@ -68,17 +69,19 @@
   align-items: center;
   background-color: hsla(178, 100%, 50%, 0.635);
   border-radius: 10px;
+  height: 99%;
 }
 
 .card-header h2 {
   color: #FCFCFE;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .card-header h2:hover {
   color: var(--cyan);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card-main {
@@ -107,6 +110,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 16px;
 }
 
 .card-main div .cc-p1 {
@@ -159,24 +163,28 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .card-container {
-    padding: 30px;
+    padding: 20px;
   }
 
   .card {
     padding: 20px;
-    width: 80vw;
+    width: 100%;
   }
 
   .card-header h2 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .card-content {
-    font-size: 16px;
+    font-size: 10px;
+  }
+
+  .card-main div p {
+    font-size: 14px;
   }
 
   .card-footer p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
